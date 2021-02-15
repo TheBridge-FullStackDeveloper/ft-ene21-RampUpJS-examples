@@ -3,19 +3,22 @@ function saludarA(person) {
   console.log("Hola " + person);
 }
 
-//saludarA("David");
+/*
+saludarA("David");
 
-//let myName = prompt("Say my name");
-//saludarA(myName);
+let myName = prompt("Say my name");
+saludarA(myName);
 
-//confirm("Eres el puto amo??")
-//alert("Te quiero")
-
-
-
+confirm("Eres el puto amo??")
+alert("Te quiero")
+*/
 
 function multiplicarDosNumeros(number1, number2) {
-  //return number1 * number2;
+  // -------- With asterisk version --------
+  
+  // return number1 * number2;
+
+  // -------- Without asterisk version --------
 
   let result = 0;
   let beg, end;
@@ -40,28 +43,18 @@ function multiplicarDosNumeros(number1, number2) {
   return result;
 }
 
+/*
+// Version 1 (+memory, imperative paradigm)
+let resultado1 = multiplicarDosNumeros(-99, 138);
+console.log(resultado1);
 
+let resultado2 = resultado1 + 4;
+console.log(resultado2);
 
-// f(x, y) = x * y
-
-// f(2,3) = 6
-// f(-12, 12) = -144
-
-
-
-// // Version 1 (+memory)
-// let resultado1 = multiplicarDosNumeros(-99, 138);
-// console.log(resultado1);
-
-// let resultado2 = resultado1 + 4;
-// console.log(resultado2);
-
-// // Version 2 (+CPU)
-// console.log( multiplicarDosNumeros( -99, -138 ) );
-
-// console.log(multiplicarDosNumeros(-99, 138) + 4);
-
-
+// Version 2 (+CPU, functional paradigm)
+console.log(multiplicarDosNumeros(-99, -138));
+console.log(multiplicarDosNumeros(-99, 138) + 4);
+*/
 // -----------------------------------
 
 let ages = []; // array
@@ -80,9 +73,7 @@ stuff[last]++;
 
 // Añade un elemento a un array por el final sin saber su tamaño
 stuff[stuff.length] = "looooooooool";
-
 //stuff.push("looooooooool");
-
 
 let myName = "David";
 let myAge = 39;
@@ -92,8 +83,7 @@ function teachCoding() {
   console.log("Soy programador fddfbthrnrtbñ regr eñgñññget >>> \"\"\"");
 }
 
-// JSON
-// JavaScript Object Notation
+// JSON (JavaScript Object Notation)
 
 let me = {
   name: "David",
@@ -108,7 +98,6 @@ me.surname = "Power";
 
 console.log("Me llamo " + me.name + " " + me.surname + " y tengo " + me.age + " años y lo que sé hacer es: " + me.skills[0] + ", " + me.skills[1] + " y " + me.skills[2]);
 
-
 let darkMe = me;
 
 darkMe.name = "DarkDavid";
@@ -116,9 +105,8 @@ darkMe.age = -39;
 
 console.log(me.name);
 
-
-// Dado un conjunto de personas, implementar una funcion que devuelva
-// el promedio de edades de todas ellas
+// Dado un conjunto de personas, implementar una funcion
+// que devuelva el promedio de edades de todas ellas
 
 let people = [
   {
@@ -134,7 +122,6 @@ let people = [
     age: 30
   }
 ];
-
 
 function getAverage(people) {
 
@@ -154,4 +141,4 @@ function getAverage(people) {
   return finalAverage;
 }
 
-console.log( getAverage(people) );
+console.log(getAverage(people));
