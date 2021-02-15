@@ -1,0 +1,23 @@
+
+-------- OBJETOS --------
+
+- Dos JUGADORes
+- FICHAs de dos TIPOs (1 por cada jugador)
+- Un TABLERO con nueve/3x3 CASILLAs
+- Las casillas tienen un ESTADO (libre, ocupada por un jugador, mínimo 2)
+- TURNO
+
+-------- REGLAS --------
+
+- Los jugadores, por turnos,
+ PONEN una ficha propia... si pueden.
+
+- Condiciones para poner una ficha:
+  1) Casilla libre
+  2) Que sea tu turno
+  3) No haya terminado la partida:
+      3.1) Ha habido victoria
+      3.2) Empate (no hay casillas libres)
+
+- Ganar la partida cuando: 3 FICHAs propias
+  están en línea (horizontal, vertical, diagonal)
