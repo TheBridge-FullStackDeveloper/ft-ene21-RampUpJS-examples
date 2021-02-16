@@ -1,0 +1,14 @@
+.ticTacToeBoard {
+  width: 600px;
+  height: 600px;
+}
+
+.ticTacToeBoard td {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.casillaMarcada {
+  background-color: "#11dd11";
+}
