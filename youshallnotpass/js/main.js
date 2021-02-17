@@ -9,8 +9,6 @@ function init(initialState, initialClass, initialText, initialImage) {
   enabledButton = initialState;
   btn1.className += initialClass;
   btn1.innerText = initialText;
-
-  // Cambiar la imagen
   img1.src = initialImage;
 }
 
