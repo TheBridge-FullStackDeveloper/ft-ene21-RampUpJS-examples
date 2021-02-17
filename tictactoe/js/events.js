@@ -5,7 +5,7 @@ let currentToken = "X";
 const pos00 = document.getElementById("position0_0");
 
 // Asignarle un callback ante un evento
-pos00.addEventListener("click", function () { // inline anonymous function
+pos00.addEventListener("click", function () {
 
   putToken(currentToken, this.id);
 });
@@ -24,4 +24,3 @@ function putToken(token, position) {
 
   currentToken = currentToken === "X" ? "O" : "X";
 }
-
