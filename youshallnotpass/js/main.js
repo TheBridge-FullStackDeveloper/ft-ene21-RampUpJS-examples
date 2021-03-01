@@ -17,33 +17,32 @@ init(false, " off", "OFF", "img/balrog.jpg");
 // ---------------- CAMBIOS ----------------
 
 // Cuando el usuario haga click en el botón...
-btn1.addEventListener("click", changeState);
-/*
 btn1.addEventListener("click", function() {
-  changeState();
+  enabledButton = changeState(enabledButton, btn1, img1);
 });
-*/
 
 // ... lo cambio al contrario
-function changeState() {
+function changeState(currentState, buttonDOM, imageDOM) {
   
   // if (está en ON) {
-  if (enabledButton) {
-    enabledButton = false;
-    btn1.classList.remove("on");
-    btn1.classList.add("off");
-    btn1.innerText = "OFF";
+  if (currentState) {
+    currentState = false;
+    buttonDOM.classList.remove("on");
+    buttonDOM.classList.add("off");
+    buttonDOM.innerText = "OFF";
 
     // Cambiar la imagen
-    img1.src = "img/balrog.jpg";
+    imageDOM.src = "img/balrog.jpg";
   }
   else {
-    enabledButton = true;
-    btn1.classList.remove("off");
-    btn1.classList.add("on");
-    btn1.innerText = "ON";
+    currentState = true;
+    buttonDOM.classList.remove("off");
+    buttonDOM.classList.add("on");
+    buttonDOM.innerText = "ON";
 
     // Cambiar la imagen
-    img1.src = "img/newgandalf.jpg";
+    imageDOM.src = "img/newgandalf.jpg";
   }
+
+  return currentState;
 }
